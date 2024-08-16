@@ -15,6 +15,7 @@ NeTPy is a simple TCP connection tool that can be useful in cases of CTF or Pent
 - -c, --command
 - -e, --execute
 - -l, --listen
+- -u, --upload [WIP :(] 
 
 
 
