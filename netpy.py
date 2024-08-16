@@ -200,7 +200,7 @@ netcat.py -t 192.168.1.108 -p 5555 -l -c # Command Shell
     parser.add_argument('-l', '--listen', action='store_true', help='Listening Mode')
     parser.add_argument('-p', '--port', type=int, default=5555, help='Target Port (default: 5555)')
     parser.add_argument('-t', '--target', default='127.0.0.1', help='Target IP (default: localhost)')
-    #parser.add_argument('-u', '--upload', help='Remote File Upload')
+    parser.add_argument('-u', '--upload', help='Remote File Upload')
 
 
     # checks if any arguments were passed; If not, display help
