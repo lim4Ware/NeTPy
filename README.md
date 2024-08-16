@@ -13,16 +13,16 @@ NeTPy is a simple TCP connection tool that can be useful in cases of CTF or Pent
   - `textwrap`
   - `threading`
 
--- Instalation: 
-- git clone https://github.com/lim4Ware/NeTPy.git
+# Instalation: 
+`git clone https://github.com/lim4Ware/NeTPy.git`
 
--- Usage:
-[SERVER LISTENING - COMMAND SHELL MODE]
-- This mode enables the use of command execution (shell) directly on the server that is listening, an alternative to reverse shell.
-- Just run the command below on the server you want to open a shell on and from any other machine, connect to the IP/Port of this server:
-- 'netpy.py -t 192.168.1.101 -p 5555 -l -c'
+# Usage:
+[SERVER LISTENING - COMMAND SHELL MODE (-c, --command)]
+This mode enables the use of command execution (shell) directly on the server that is listening, an alternative to reverse shell.
+Just run the command below on the server you want to open a shell on and from any other machine, connect to the IP/Port of this server:
+`netpy.py -t 192.168.1.101 -p 5555 -l -c
 
-[SERVER LISTENING - REMOTE COMMAND MODE]
-- This mode enables the preloading of commands on the server that is listening, causing it to send the result of the previously configured command directly to the connection made on the defined IP/Port. Example:
-- netpy.py -t 192.168.1.101 -p 5555 -l -e="cat /etc/passwd"
+[SERVER LISTENING - REMOTE COMMAND MODE (-e, --execute)]
+This mode enables the preloading of commands on the server that is listening, causing it to send the result of the previously configured command directly to the connection made on the defined IP/Port. Example:
+`netpy.py -t 192.168.1.101 -p 5555 -l -e="cat /etc/passwd"
   
