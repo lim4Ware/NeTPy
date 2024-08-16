@@ -28,7 +28,7 @@ NeTPy is a simple TCP connection tool that can be useful in cases of CTF or Pent
   - `sys`
   - `textwrap`
   - `threading`
-## Instalação
+## INSTALATION
 
 Very easy... just git clone:
 
